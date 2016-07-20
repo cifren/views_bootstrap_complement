@@ -18,7 +18,8 @@ function template_preprocess_views_bootstrap_carousel(&$vars) {
   $image_field = $vars['view']->style_plugin->options['image_field'];
   $caption_field = $vars['view']->style_plugin->options['caption_field'];
   
-  $vars['attributes']['class'][] = 'panel-group';
+  $vars['attributes']['class'][] = 'carousel slide';
+  $vars['attributes']['class'][] = $vars['view']->display_handler->getOption('css_class');
   
   foreach ($vars['rows'] as $id => $row) {
     $vars['rows'][$id] = array();
