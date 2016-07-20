@@ -1,0 +1,14 @@
+<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+     {% for row in rows %}
+     <div class="item {% if loop.first %}active{% endif %}">
+        {{row.image}}
+        <div class="carousel-caption">
+          {{row.caption}}
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+  </div>
+</div>
+</div>

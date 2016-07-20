@@ -1,0 +1,7 @@
+name: 'Views Bootstrap Complement'
+type: 'module'
+description: 'Bootstrap Components complement.'
+package: 'Views'
+core: 8.x
+dependencies:
+  - views
